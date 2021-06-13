@@ -3,12 +3,12 @@ package br.espm.springboot.carteira.common.datatype;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import br.espm.springboot.cambio.common.datatype.Cotacao;
+import br.espm.springboot.ativo.common.datatype.Ativo;
 
-public class TransacaoCambio {
+public class TransacaoAtivo {
     private String id;
     private Carteira carteira;
-    private Cotacao cotacao;
+    private Ativo ativo;
     private Date data;
     private BigDecimal qtd;
     private TransacaoTipo tipo;
@@ -23,8 +23,8 @@ public class TransacaoCambio {
         return carteira;
     }
 
-    public Cotacao getCotacao(){
-        return cotacao;
+    public Ativo getAtivo(){
+        return ativo;
     }
 
     public Date getData(){
@@ -48,8 +48,8 @@ public class TransacaoCambio {
         this.carteira = carteira;
     }
 
-    public void setCotacao(Cotacao cotacao){
-        this.cotacao = cotacao;
+    public void setAtivo(Ativo ativo){
+        this.ativo = ativo;
     }
 
     public void setData(Date data){
@@ -63,5 +63,6 @@ public class TransacaoCambio {
     public void setTipo(TransacaoTipo tipo){
         this.tipo = tipo;
     }
+    
     
 }
